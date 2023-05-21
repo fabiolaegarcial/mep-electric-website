@@ -163,6 +163,22 @@ header a{
 
 
 
+
+
+/* SERVICES PAGE */
+.services-header{
+	font-weight: 500;
+	font-size: clamp(.8em, 1.45em + 2vw ,2em);
+    margin: 4em 0em 0 1em;
+}
+.services-list{
+	margin: 2em 0 12em 3em;
+	
+}
+
+
+
+
 /*************** FOOTER ***************/
 /* 
 --> Blue background
