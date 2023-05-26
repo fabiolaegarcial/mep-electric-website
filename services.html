@@ -39,15 +39,27 @@
         <h1 class="home-header serv">SERVICES</h1>
         <div class="services-box">
             <ul class="main-services">
-                <li class="main-li">RESIDENTIAL <i class='bx bx-chevron-down-circle'></i></li> 
-                    <div class="services-dropdown">
+                <li class="main-li" onclick="toggleRes()">RESIDENTIAL <i class='bx bx-chevron-down-circle' id="toggle-res"></i><i class='bx bx-chevron-up-circle' id="close-res"></i></li> 
+                    <div class="services-dropdown res">
                         <p class="sub-li">LED Installation</p>
                         <p class="sub-li">Electrical Trim</p>
                         <p class="sub-li">Electrical Rough In</p>
                     </div>
 
-                <li class="main-li">COMMERCIAL <i class='bx bx-chevron-down-circle'></i></li> 
-                <li class="main-li">INDUSTRIAL <i class='bx bx-chevron-down-circle'></i></li>
+                <li class="main-li" onclick="toggleCom()">COMMERCIAL <i class='bx bx-chevron-down-circle' id="toggle-com"></i><i class='bx bx-chevron-up-circle' id="close-com"></i></li> 
+                    <div class="services-dropdown com">
+                        <p class="sub-li">LED Installation</p>
+                        <p class="sub-li">Electrical Trim</p>
+                        <p class="sub-li">Electrical Rough In</p>
+                    </div>
+
+                <li class="main-li" onclick="toggleInd()">INDUSTRIAL <i class='bx bx-chevron-down-circle' id="toggle-ind"></i><i class='bx bx-chevron-up-circle' id="close-ind"></i></li>
+                    <div class="services-dropdown ind">
+                        <p class="sub-li">LED Installation</p>
+                        <p class="sub-li">Electrical Trim</p>
+                        <p class="sub-li">Electrical Rough In</p>
+                    </div>
+
             </ul>
         </div>
     </section>

@@ -1,4 +1,4 @@
-// navbar
+// Navbar
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -11,6 +11,25 @@ window.onscroll = () => {
 	menu.classList.remove('bx-x');
 	navbar.classList.remove('active');
 };
+
+
+
+// Services Page
+function toggleRes(){
+	document.querySelector('.res').classList.toggle("show");
+	document.querySelector('#close-res').classList.toggle("show");
+	document.querySelector('#toggle-res').classList.toggle("hide");
+}
+function toggleCom(){
+	document.querySelector('.com').classList.toggle("show");
+	document.querySelector('#close-com').classList.toggle("show");
+	document.querySelector('#toggle-com').classList.toggle("hide");
+}
+function toggleInd(){
+	document.querySelector('.ind').classList.toggle("show");
+	document.querySelector('#close-ind').classList.toggle("show");
+	document.querySelector('#toggle-ind').classList.toggle("hide");
+}
 
 
 
