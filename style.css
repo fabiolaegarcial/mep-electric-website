@@ -226,9 +226,10 @@ header a{
 	margin-top: 1em;
 	border-radius: 10px;
 }
-.services-box ul{
+.main-services{
 	position: relative;
 	background: #ffffff;
+
 }
 .services-box ul li{
 	margin-top: 1em;
@@ -236,7 +237,7 @@ header a{
 	padding: .7em 1em;
 	width: 85%;
 	margin-left: 7.5%;
-	margin-bottom: 5%;
+	/* margin-bottom: 5%; */
 	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 	transition: transform 0.5s;
 	font-size: clamp(0.8em, 1.4em + 1vw, 1.8em);
@@ -244,7 +245,12 @@ header a{
 	letter-spacing: 1px;
 
 	border-radius: 10px;
+
 }
+.services-box ul li:last-child{
+	margin-bottom: 1em;
+}
+
 .services-box ul li:hover{
 	transform: scale(1.01);
 	z-index: 100;
@@ -259,8 +265,23 @@ header a{
 }
 
 
-
-
+.services-dropdown{
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+	background-color: #868d9c2b;
+	width: 85%;
+	margin-left: 7.5%;
+	border-radius: 10px;
+	font-size: clamp(0.6em, 1em + 1vw, 1.2em);
+}
+.services-dropdown p{
+	padding: 1em 1.5em;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+.services-dropdown p:hover{
+	background-color: var(--accent-color);
+	color: var(--bg-color);
+	font-weight: 600;
+}
 
 /*************** CONTACT PAGE ***************/
 
