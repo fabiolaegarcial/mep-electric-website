@@ -110,7 +110,7 @@ header a{
 .welcome-section{
     height: clamp(30em, 52em + 2vw, 70em); 
 	overflow: hidden;
-	margin-bottom: 2em;
+	/* margin-bottom: 2em; */
 }
 .hero-welcome{
 	height: clamp(30em, 52em + 2vw, 70em); 
@@ -164,6 +164,9 @@ header a{
 	font-size: clamp(.8em, 1.2em + 2vw ,2em);
     margin: 1.5em 0em 0 2em;
 }
+#about-us-header{
+	margin-top: 4em;
+}
 .aboutUs-text{
     font-weight: 300;
 	font-size: clamp(.4rem, .75rem + 2vw , 1rem);
@@ -181,8 +184,9 @@ header a{
 }
 .projects{
     color: #000000;
+	margin-top: 4em;
 }
-.container{
+.projects-container{
 	padding: 100px 8%;
 
 	display: grid;
@@ -231,6 +235,9 @@ header a{
 
 
 /*************** SERVICES PAGE ***************/
+.services{
+	margin-top: 4em;
+}
 .services-box{
 	width: 100;
 	margin-top: 1em;
@@ -422,7 +429,7 @@ header a{
 
 	.home-header{
 		font-size: clamp(.5rem, 1rem + 2vw ,2rem);
-		margin: 3em 0em 0 3.5em;
+		margin: 2em 0em 0 3.5em;
 	}
 	.aboutUs-text{
 		font-size: clamp(.3rem, .4rem + 2vw , 1.1rem);
@@ -560,10 +567,13 @@ header a{
 	}
 
 
-	/***** WELCOME SECTION *****/
+	/***** ABOUT US SECTION *****/
 	.home-header{
 		font-size: 1.3em;
 		margin: 1.5em 0 0 1.6em;
+	}
+	#about-us-header{
+		margin-top: 2em;
 	}
 	.aboutUs-text{
 		font-size: .9em;
