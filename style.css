@@ -22,12 +22,19 @@ a:link{ text-decoration: none; }
 	--p-font: clamp(.35em, .85em + 1vw , 1.1em);
 
 }
-body{
+html, body{
+	height: 100%;
 	background: var(--bg-color);
 	color: var(--text-color);
 	width: 100vw;
 }
-
+#container{
+	min-height: 75%;
+}
+#main{
+	overflow: auto;
+	padding-bottom: 0em;
+}
 
 
 /*************** NAVBAR ***************/
@@ -147,8 +154,8 @@ header a{
 }
 .home-header{
     font-weight: 600;
-	font-size: clamp(.8em, 1.45em + 2vw ,2em);
-    margin: 3em 0em 0 1.8em;
+	font-size: clamp(.8em, 1.2em + 2vw ,2em);
+    margin: 3.5em 0em 0 2em;
 }
 .aboutUs-text{
     font-weight: 400;
@@ -220,6 +227,7 @@ header a{
 .services-box{
 	width: 100;
 	margin-top: 1em;
+	margin-bottom: 5em;
 	border-radius: 10px;
 }
 .main-services{
@@ -230,10 +238,10 @@ header a{
 }
 .services-box ul li{
 	margin-top: 1em;
+	margin-left: 7.5%;
 	list-style: none;
 	padding: .7em 1em;
 	width: 85%;
-	margin-left: 7.5%;
 	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 	transition: transform 0.5s;
 	font-size: clamp(0.2em, 1.2em + 1vw, 1.4em);
@@ -260,7 +268,7 @@ header a{
 
 .services-dropdown{
 	display: none;
-
+	margin-bottom: 2em;
 	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 	background-color: #868d9c2b;
 	width: 85%;
@@ -298,6 +306,8 @@ header a{
     padding: 3em 0 1em 0;
 	color: var(--bg-color);
 	width: 100%;
+	position: relative;
+	clear: both;
 }
 .row{
     display: flex;
@@ -428,8 +438,6 @@ header a{
 	/***** FOOTER *****/
 	.footer{
 		padding: 1em 0 1em 0;
-		position: absolute;
-		bottom: 0;
 	}
 	.row{
 		display: flex;
@@ -486,10 +494,6 @@ header a{
 
 
 	/***** FOOTER *****/
-	.footer{
-		position: absolute;
-		bottom: 0;
-	}
 	.row{
 		display: grid;
 	}
@@ -524,6 +528,9 @@ header a{
 
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1200px){
+
+
+
 
 }
