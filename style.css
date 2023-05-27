@@ -224,8 +224,9 @@ header a{
 }
 .main-services{
 	position: relative;
-	background: #ffffff;
+	background: var(--bg-color);
 	padding-bottom: 2em;
+	margin: 0 1.5em;
 }
 .services-box ul li{
 	margin-top: 1em;
@@ -233,13 +234,11 @@ header a{
 	padding: .7em 1em;
 	width: 85%;
 	margin-left: 7.5%;
-	/* margin-bottom: 5%; */
 	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 	transition: transform 0.5s;
-	font-size: clamp(0.8em, 1.4em + 1vw, 1.8em);
+	font-size: clamp(0.2em, 1.2em + 1vw, 1.4em);
 	font-weight: 400;
 	letter-spacing: 1px;
-
 	border-radius: 10px;
 
 }
@@ -417,12 +416,20 @@ header a{
 
 
 
+	/***** SERVICES PAGE *****/
+	.main-services{
+		margin: 0;
+	}
+
+
 
 
 
 	/***** FOOTER *****/
 	.footer{
 		padding: 1em 0 1em 0;
+		position: absolute;
+		bottom: 0;
 	}
 	.row{
 		display: flex;
@@ -446,6 +453,8 @@ header a{
 		line-height: 2;
 	}
 }
+
+
 @media screen and (min-width: 450px) and (orientation: portrait){
 	.home-header{
 		font-size: clamp(.5rem, 1rem + 2vw ,2rem);
@@ -457,7 +466,7 @@ header a{
 		line-height: 1.75;
 	}
 
-	/* Projects Page */
+	/***** PROJECTS PAGE *****/
 	.container{
 		padding: 100px 8%;
 	
@@ -470,7 +479,13 @@ header a{
 		padding-top: 2em;
 	}
 
+	/***** SERVICES PAGE *****/
+	.main-services{
+		margin: 0 3.5em;
+	}
 
+
+	/***** FOOTER *****/
 	.footer{
 		position: absolute;
 		bottom: 0;
