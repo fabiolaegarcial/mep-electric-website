@@ -299,7 +299,6 @@ header a{
     padding: 3em 0 1em 0;
 	color: var(--bg-color);
 	width: 100%;
-
 }
 .row{
     display: flex;
@@ -472,6 +471,10 @@ header a{
 	}
 
 
+	.footer{
+		position: absolute;
+		bottom: 0;
+	}
 	.row{
 		display: grid;
 	}
