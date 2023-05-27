@@ -153,24 +153,18 @@ header a{
 
 
 /*************** ABOUT US SECTION ***************/
-.home{
-    color: rgb(0, 0, 0);
-    padding: 1.75em;
-    padding-top: 3em;
-    padding-bottom: 3em;
-}
 .home-header{
     font-weight: 500;
 	font-size: clamp(.8em, 1.2em + 2vw ,2em);
-    margin: 1.5em 0em 0 2em;
+    margin: 1em 0em 0 15vw;
 }
 #about-us-header{
-	margin-top: 4em;
+	margin-top: 3em;
 }
 .aboutUs-text{
     font-weight: 300;
 	font-size: clamp(.4rem, .75rem + 2vw , 1rem);
-	margin: 0em 1.5em;
+	margin: 2em 15vw;
 	line-height: 1.5;
 }
 
@@ -247,14 +241,12 @@ header a{
 .main-services{
 	position: relative;
 	padding-bottom: 2em;
-	margin: 0 1.5em;
 }
 .services-box ul li{
-	margin-top: 1em;
-	margin-left: 7.5vw;
+	margin: 1em 0 0 15vw;
 	list-style: none;
 	padding: .7em 1em;
-	width: 85vw;
+	width: 70vw;
 	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 	transition: transform 0.5s;
 	font-size: clamp(0.2em, 1.2em + 1vw, 1.4em);
@@ -284,8 +276,8 @@ header a{
 	margin-bottom: 2em;
 	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 	background-color: #868d9c2b;
-	width: 85%;
-	margin-left: 7.5%;
+	width: 70vw;
+	margin-left: 15vw;
 	border-radius: 10px;
 	font-size: clamp(0.6em, 1em + 1vw, 1.2em);
 }
@@ -425,19 +417,25 @@ header a{
 	/***** ABOUT US SECTION *****/
 	.home-header{
 		font-size: clamp(.5rem, 1rem + 2vw ,2rem);
-		margin: 2em 0em 0 3.5em;
+		margin: 2em 0em 0 7.5vw;
 	}
 	.aboutUs-text{
 		font-size: clamp(.3rem, .4rem + 2vw , 1.1rem);
-		margin: 0em 4.5em;
+		margin: 2em 7.5vw;
 		line-height: 1.75;
 	}
+	
 
 
 
 	/***** SERVICES PAGE *****/
-	.main-services{
-		margin: 0;
+	.services-box ul li{
+		margin: 1em 0 0 7.5vw;
+		width: 85vw;
+	}
+	.services-dropdown{
+		width: 85vw;
+		margin-left: 7.5vw;
 	}
 
 
@@ -480,11 +478,11 @@ header a{
 	/***** ABOUT SECTION *****/
 	.home-header{
 		font-size: clamp(.5rem, 1rem + 2vw ,2rem);
-		margin: 3.5em 0em 0 4em;
+		margin: 2em 0em 0 10vw;
 	}
 	.aboutUs-text{
 		font-size: clamp(.3rem, .4rem + 2vw , 1.1rem);
-		margin: 0em 5em;
+		margin: 2em 10vw;
 		line-height: 1.75;
 	}
 
@@ -502,8 +500,13 @@ header a{
 	}
 
 	/***** SERVICES PAGE *****/
-	.main-services{
-		margin: 0 3.5em;
+	.services-box ul li{
+		margin: 1em 0 0 10vw;
+		width: 80vw;
+	}
+	.services-dropdown{
+		width: 80vw;
+		margin-left: 10vw;
 	}
 
 
@@ -565,28 +568,22 @@ header a{
 	/***** ABOUT US SECTION *****/
 	.home-header{
 		font-size: 1.3em;
-		margin: 1.5em 0 0 1.6em;
 	}
 	#about-us-header{
-		margin-top: 2em;
+		margin-top: 1em;
 	}
 	.aboutUs-text{
 		font-size: .9em;
-		margin: 0em .5em;
 	}
 
 
 	/***** SERVICES PAGE *****/
-	.main-services{
-		margin: 0 .5em;
-	}
 	.services-box ul li{
-		padding: .7em 1em;
-		font-size: 1.2em;
+		font-size: 1em;
 		letter-spacing: .5px;	
 	}
 	.services-dropdown{
-		font-size: 1em;
+		font-size: .8em;
 	}
 	
 }
