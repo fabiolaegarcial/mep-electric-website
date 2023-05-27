@@ -239,23 +239,22 @@ header a{
 	margin-top: 4em;
 }
 .services-box{
-	width: 100;
+	width: 100vw;
 	margin-top: 1em;
 	margin-bottom: 5em;
 	border-radius: 10px;
 }
 .main-services{
 	position: relative;
-	background: var(--bg-color);
 	padding-bottom: 2em;
 	margin: 0 1.5em;
 }
 .services-box ul li{
 	margin-top: 1em;
-	margin-left: 7.5%;
+	margin-left: 7.5vw;
 	list-style: none;
 	padding: .7em 1em;
-	width: 85%;
+	width: 85vw;
 	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 	transition: transform 0.5s;
 	font-size: clamp(0.2em, 1.2em + 1vw, 1.4em);
@@ -417,16 +416,13 @@ header a{
 		display: none;
 	}
 
-
-
-
+	/***** WELCOME SECTION *****/
 	.welcome-text{
 		left: 5vw;
 		white-space: nowrap;
 	}
 
-
-
+	/***** ABOUT US SECTION *****/
 	.home-header{
 		font-size: clamp(.5rem, 1rem + 2vw ,2rem);
 		margin: 2em 0em 0 3.5em;
@@ -443,7 +439,6 @@ header a{
 	.main-services{
 		margin: 0;
 	}
-
 
 
 
