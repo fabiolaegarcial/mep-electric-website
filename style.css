@@ -18,7 +18,6 @@ a:link{ text-decoration: none; }
 	--bluetwo-color: #14347d;
 	--gradient-color: -webkit-linear-gradient(180deg, #9ca8c8, #002989);
 	--main-font: 2.2rem;
-	/* --p-font: clamp(.15em, .5em + 1vw , 1em); */
 	--p-font: clamp(.35em, .85em + 1vw , 1.1em);
 
 }
@@ -110,7 +109,6 @@ header a{
 .welcome-section{
     height: clamp(30em, 52em + 2vw, 70em); 
 	overflow: hidden;
-	/* margin-bottom: 2em; */
 }
 .hero-welcome{
 	height: clamp(30em, 52em + 2vw, 70em); 
@@ -150,9 +148,7 @@ header a{
 	cursor: pointer;
 }
 
-
-
-/*************** ABOUT US SECTION ***************/
+/******* ABOUT US SECTION *******/
 .home-header{
     font-weight: 500;
 	font-size: clamp(.8em, 1.2em + 2vw ,2em);
@@ -168,6 +164,19 @@ header a{
 	line-height: 1.5;
 }
 
+/******* PARTNERS SECTION *******/
+.home-ext-logos{
+	display: grid;
+	place-items: center;
+	padding: 2em 20vw 7em 20vw;
+	grid-template-columns: repeat(auto-fit, minmax(20vw, auto));
+	row-gap: clamp(.5em, 1.5em + 1vw, 2.5em);
+	column-gap: clamp(.5em, 1em + 1vw, 2em);
+}
+.home-ext-logos img{
+	width: clamp(20vw, 25vw, 30vw);
+	height: auto;
+}
 
 
 
@@ -205,6 +214,7 @@ header a{
 	font-weight: 500;
 	letter-spacing: 1px;
 	margin-top: .5em;
+	padding: 0 1em;
 }
 .box h6{
     font-weight: 200;
@@ -292,7 +302,11 @@ header a{
 	display: none;
 }
 
+
+
 /*************** CONTACT PAGE ***************/
+
+
 
 
 
@@ -351,10 +365,7 @@ header a{
 }
 
 
-
-
-
-
+/*************** MISC ***************/
 .empty-container{
 	height: 2em;
 }
@@ -418,7 +429,18 @@ header a{
 		margin: 2em 7.5vw;
 		line-height: 1.75;
 	}
-	
+
+	/***** PARTNERS SECTION *****/
+	.home-ext-logos{
+		grid-template-columns: repeat(auto-fit, minmax(10vw, auto));
+		padding: 3em 7.5vw 10em 7.5vw;
+		row-gap: clamp(.5em, 1.5em + 1vw, 2.5em);
+		column-gap: clamp(.5em, 1em + 1vw, 2em);
+	}
+	.home-ext-logos img{
+		width: clamp(8vw, 10vw, 12vw);
+	}
+
 
 
 	/***** PROJECTS PAGE *****/
@@ -493,6 +515,16 @@ header a{
 		font-size: clamp(.3rem, .4rem + 2vw , 1.1rem);
 		margin: 2em 10vw;
 		line-height: 1.75;
+	}
+	/***** PARTNERS SECTION *****/
+	.home-ext-logos{
+		grid-template-columns: repeat(auto-fit, minmax(12vw, auto));
+		padding: 3em 10vw 15em 10vw;
+		row-gap: clamp(.5em, 1.5em + 1vw, 2.5em);
+		column-gap: clamp(.5em, 1em + 1vw, 2em);
+	}
+	.home-ext-logos img{
+		width: clamp(10vw, 12vw, 14vw);
 	}
 
 
