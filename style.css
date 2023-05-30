@@ -193,8 +193,8 @@ header a{
 /******* ABOUT US PAGE *******/
 .home-header{
     font-weight: 500;
-	font-size: clamp(.8em, 1.2em + 2vw ,2em);
-    margin: 1em 0em 0 15vw;
+	font-size: clamp(.8em, 1.8em + 1vw, 3em);
+    margin: 2em 0em 0 15vw;
 }
 #about-us-header{
 	margin-top: 3em;
@@ -281,7 +281,7 @@ header a{
 	width: 70vw;
 	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 	transition: transform 0.5s;
-	font-size: clamp(0.2em, 1.2em + 1vw, 1.4em);
+	font-size: clamp(0.4em, 1.3em + 1vw, 1.5em);
 	font-weight: 400;
 	letter-spacing: 1px;
 	border-radius: 10px;
@@ -311,16 +311,17 @@ header a{
 	width: 70vw;
 	margin-left: 15vw;
 	border-radius: 10px;
-	font-size: clamp(0.6em, 1em + 1vw, 1.2em);
+	font-size: clamp(0.3em, 1.1em + 1vw, 1.2em);
 }
 .services-dropdown p{
-	padding: 1em 1.5em;
+	padding: .8em 1.5em;
 	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+	font-weight: 300;
 }
 .services-dropdown p:hover{
 	background-color: var(--accent-color);
 	color: var(--bg-color);
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .show{
