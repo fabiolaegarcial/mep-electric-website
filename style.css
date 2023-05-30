@@ -172,6 +172,7 @@ header a{
 .owl-dots {
 	text-align: center;
 	margin-top: 2%;
+	margin-bottom: 4em;
 }
 .owl-dot {
 	display: inline-block;
@@ -185,24 +186,49 @@ header a{
 .owl-dot.active {
 	background-color: var(--mepblue-color) !important;
 }
-	
+
+/******* SP-SERVICES SECTION *******/
+.home-services-section{
+	display: flex;
+	font-size: 0;
+	justify-content: center;
+	padding: 3em 0;
+	background-color: var(--mepblue-color);
+}
+.services-pillars button{
+	padding: 10em 15em;
+	background-color: var(--accent-color);
+	border: none;
+}
+.services-pillars button:hover{
+	background-color: var(--mepblue-color);
+}	
+
+
+/******* ABOUT/CONTACT SECTION *******/
+.overview-section{
+	margin-top: 2em;
+}
 
 
 
 
-/******* ABOUT US PAGE *******/
+
+
+
+/*************** ABOUT US PAGE ***************/
+.about-us{
+	margin-top: 2em;
+}
 .home-header{
     font-weight: 500;
 	font-size: clamp(.8em, 1.8em + 1vw, 3em);
     margin: 2em 0em 0 15vw;
 }
-#about-us-header{
-	margin-top: 3em;
-}
 .aboutUs-text{
     font-weight: 300;
 	font-size: clamp(.4rem, .75rem + 2vw , 1rem);
-	margin: 2em 15vw;
+	margin: 2em 15vw 10em 15vw;
 	line-height: 1.5;
 }
 
@@ -215,7 +241,7 @@ header a{
 }
 .projects{
     color: #000000;
-	margin-top: 4em;
+	margin-top: 3em;
 }
 .projects-container{
 	display: grid;
@@ -234,7 +260,7 @@ header a{
 }
 .box img{
 	width: 100%;
-	height: 70vw;
+	height: 65vw;
 	object-fit: cover;
 }
 .box h4{
@@ -289,11 +315,12 @@ header a{
 }
 .services-box ul li:hover{
 	transform: scale(1.01);
-	z-index: 100;
 	background: var(--accent-color);
-	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 	color: var(--bg-color);
+	font-weight: 500;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 	cursor: pointer;
+	z-index: 100;
 }
 .services-box ul li i{
 	float: right;
@@ -334,7 +361,9 @@ header a{
 
 
 /*************** CONTACT PAGE ***************/
-
+.contact{
+	margin-top: 3em;
+}
 
 
 
@@ -447,14 +476,14 @@ header a{
 		white-space: nowrap;
 	}
 
-	/***** ABOUT US SECTION *****/
+	/***** ABOUT US PAGE *****/
 	.home-header{
 		font-size: clamp(.5rem, 1rem + 2vw ,2rem);
 		margin: 2em 0em 0 7.5vw;
 	}
 	.aboutUs-text{
 		font-size: clamp(.3rem, .4rem + 2vw , 1.1rem);
-		margin: 2em 7.5vw;
+		margin: 2em 7.5vw 7em 7.5vw;
 		line-height: 1.75;
 	}
 
@@ -492,6 +521,13 @@ header a{
 	.services-dropdown{
 		width: 85vw;
 		margin-left: 7.5vw;
+	}
+
+
+
+	/***** CONTACT PAGE *****/
+	.contact{
+		margin-top: 4em;
 	}
 
 
@@ -558,7 +594,8 @@ header a{
 	.welcome-text{
 		padding: 1em 10em 0 5em;
 	}
-	/***** ABOUT SECTION *****/
+
+	/***** ABOUT PAGE *****/
 	.home-header{
 		font-size: clamp(.5rem, 1rem + 2vw ,2rem);
 		margin: 2em 0em 0 10vw;
@@ -568,6 +605,7 @@ header a{
 		margin: 2em 10vw;
 		line-height: 1.75;
 	}
+
 	/***** PARTNERS SECTION *****/
 	.home-ext-logos{
 		grid-template-columns: repeat(auto-fit, minmax(12vw, auto));
@@ -599,6 +637,12 @@ header a{
 	.services-dropdown{
 		width: 80vw;
 		margin-left: 10vw;
+	}
+
+
+	/***** CONTACT PAGE *****/
+	.contact{
+		margin-top: 4em;
 	}
 
 
