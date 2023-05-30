@@ -46,7 +46,7 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 25px 6%;
+	padding: 25px 8%;
 	transition: .3s;
 	overflow: visible;
 }
@@ -154,7 +154,43 @@ header a{
 	cursor: pointer;
 }
 
-/******* ABOUT US SECTION *******/
+
+/******* PARTNERS SECTION *******/
+.carousel-title h1{
+	text-align: center;
+	font-weight: 500;
+	font-size: clamp(.8em, 1.8em + 1vw, 3em);
+	padding: 1.5em 5vw .8em 5vw;
+}
+.partners-section img{
+	filter: grayscale(1);
+	scale: 80%;
+}
+.brand-carousel{
+	padding: 0 5vw;
+}
+.owl-dots {
+	text-align: center;
+	margin-top: 2%;
+}
+.owl-dot {
+	display: inline-block;
+	height: .1em !important;
+	width: 1em !important;
+	background-color: var(--accent-color) !important;
+	opacity: 0.8;
+	border-radius: 10%;
+	margin: 0 3px;
+}
+.owl-dot.active {
+	background-color: var(--mepblue-color) !important;
+}
+	
+
+
+
+
+/******* ABOUT US PAGE *******/
 .home-header{
     font-weight: 500;
 	font-size: clamp(.8em, 1.2em + 2vw ,2em);
@@ -168,20 +204,6 @@ header a{
 	font-size: clamp(.4rem, .75rem + 2vw , 1rem);
 	margin: 2em 15vw;
 	line-height: 1.5;
-}
-
-/******* PARTNERS SECTION *******/
-.home-ext-logos{
-	display: grid;
-	place-items: center;
-	padding: 2em 20vw 7em 20vw;
-	grid-template-columns: repeat(auto-fit, minmax(20vw, auto));
-	row-gap: clamp(.5em, 1.5em + 1vw, 2.5em);
-	column-gap: clamp(.5em, 1em + 1vw, 2em);
-}
-.home-ext-logos img{
-	width: clamp(20vw, 25vw, 30vw);
-	height: auto;
 }
 
 
@@ -420,7 +442,7 @@ header a{
 
 	/***** WELCOME SECTION *****/
 	.welcome-text{
-		left: 7vw;
+		left: 5vw;
 		white-space: nowrap;
 	}
 
@@ -435,15 +457,17 @@ header a{
 		line-height: 1.75;
 	}
 
+
 	/***** PARTNERS SECTION *****/
 	.home-ext-logos{
 		grid-template-columns: repeat(auto-fit, minmax(10vw, auto));
-		padding: 3em 7.5vw 10em 7.5vw;
+		padding: 3em 7.5vw 5em 7.5vw;
 		row-gap: clamp(.5em, 1.5em + 1vw, 2.5em);
 		column-gap: clamp(.5em, 1em + 1vw, 2em);
 	}
 	.home-ext-logos img{
 		width: clamp(8vw, 10vw, 12vw);
+		filter: grayscale(1);
 	}
 
 

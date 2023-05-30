@@ -21,7 +21,6 @@ window.onscroll = () => {
 
 
 
-
 // Services Page
 function toggleRes(){
 	document.querySelector('.res').classList.toggle("show");
