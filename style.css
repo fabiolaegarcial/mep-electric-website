@@ -687,15 +687,14 @@ header a{
 	}
 	/**** SP-SERVICES SECTION ****/
 	.home-services-title h1{
-		font-size: clamp(.8em, 1.8em + 1vw, 3em);
-		padding: 1em 5vw 1em 5vw;
+		padding: .5em 5vw .5em 5vw;
 	}
 	.home-services{
 		background-image: url("./MEP_imgs/website-photos/background-splash.png");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
-		padding: 2em 0 7em 0;
+		padding: 2em 0 5em 0;
 	}
 	.services-section{
 		flex-direction: row;
