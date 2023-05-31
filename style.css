@@ -529,7 +529,6 @@ header a{
 		line-height: 1.75;
 	}
 
-
 	/***** PARTNERS SECTION *****/
 	.home-ext-logos{
 		grid-template-columns: repeat(auto-fit, minmax(10vw, auto));
@@ -541,6 +540,25 @@ header a{
 		width: clamp(8vw, 10vw, 12vw);
 		filter: grayscale(1);
 	}
+
+	/******* SP-SERVICES SECTION *******/
+	.services-section{
+		flex-direction: row;
+	}
+	.services-text{
+		font-size: clamp(.5em, 1.8em, 3em);
+		left: 50%;
+	}
+	.services-image{
+		height: clamp(15em, 18em, 20em);
+	}
+
+
+
+
+
+
+
 
 
 
@@ -608,6 +626,7 @@ header a{
 }
 
 
+
 @media screen and (min-width: 750px) and (orientation: portrait){
 	/***** NAVBAR *****/
 	header{
@@ -636,6 +655,21 @@ header a{
 	.welcome-text{
 		padding: 1em 10em 0 5em;
 	}
+	/**** SP-SERVICES SECTION ****/
+	.services-section{
+		flex-direction: row;
+	}
+	.services-text{
+		font-size: clamp(.5em, 1.7em, 3em);
+		left: 50%;
+	}
+
+
+
+
+
+
+
 
 	/***** ABOUT PAGE *****/
 	.home-header{
