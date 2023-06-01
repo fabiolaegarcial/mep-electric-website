@@ -193,7 +193,7 @@ header a{
 	text-align: center;
 	font-weight: 500;
 	font-size: clamp(.8em, 1.8em + 1vw, 2.4em);
-	padding: 1em 5vw 0 5vw;
+	padding: 1em 0 0 0;
 }
 .home-services-subtitle p{
 	font-size: clamp(.5em, .8em + 1vw, 1.8em);
@@ -204,6 +204,7 @@ header a{
 .services-section{
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 2em;
 }
 .home-services-container{
 	position: relative;
@@ -261,7 +262,77 @@ header a{
 
 /******* ABOUT/CONTACT SECTION *******/
 .overview-section{
-	margin-top: 2em;
+	margin-top: 1em;
+	display: flex;
+	flex-direction: column;
+}
+.overview-col{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 80vw;
+	margin: 0 auto;
+}
+.overview-btn{
+	flex: 1 1 auto;
+	margin: 5vw .5em;
+	padding: 1.5em;
+	font-size: clamp(.3em, .8em + 1vw, 1.2em);
+	font-weight: 300;
+	text-align: center;
+	transition: 0.5s;
+	color: var(--bg-color);
+	box-shadow: 0 0 5px #ffffff;
+	border-radius: 40px;
+	background: linear-gradient(90deg, #002989, transparent) #c5cfe3;
+	text-decoration: none;
+	transition: background-color 1s;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.overview-btn:hover, .overview-btn:focus {
+	transition-delay: .1s;
+	background: linear-gradient(90deg, #c5cfe3, transparent) #002989;
+}
+.overview-contact{
+	width: 100vw;
+	height: 110vw;
+	margin: 8vw 0;
+    background-image: linear-gradient(290deg, #002989, #c5cfe3);
+}
+.contact-card{
+	width: 80vw;
+	height: 90vw;
+	margin: 10vw 10vw;
+	background-color: var(--bg-color);
+	border-radius: 15px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.overview-section-title h1{
+	text-align: center;
+	font-weight: 300;
+	font-size: clamp(.8em, 1.6em + 1vw, 2.2em);
+	padding: 1em 0 .5em 0;
+}
+.contact-card-text{
+	margin-top: .5em;
+}
+.cc-point{
+	font-size: clamp(.3em, .7em + 1vw, 1.1em);
+	font-weight: 200;
+	margin: 0 0 1em 1em;
+	overflow: hidden;
+	word-break: break-all;
+}
+.contact-card-text i{
+	font-size: clamp(.7em, 1.2em + 1vw, 1.7em);
+	margin: 0em 4vw -.3em 2vw;
+}
+.cc-sub-point{
+	font-size: clamp(.3em, .6em + 1vw, 1em);
+	font-weight: 200;
+	margin: 0 0 .7em 4.5em;
+	overflow: hidden;
+	word-break: break-all;
 }
 
 
@@ -830,8 +901,43 @@ header a{
 		padding: 10px 25px;
 	}
 
+	
+	/******* ABOUT/CONTACT SECTION *******/
+	.overview-section-title h1{
+		font-weight: 300;
+		font-size: clamp(.8em, 1.3em + 1vw, 2em);
+	}
+	.overview-col{
+		width: 85vw;
+	}
+	.overview-btn {
+		font-size: clamp(.3em, .7em + 1vw, 1em);
+	}
+	.overview-contact{
+		width: 100vw;
+		height: 120vw;
+		margin: 8vw 0;
+		background-image: linear-gradient(290deg, #002989, #c5cfe3);
+	}
+	.contact-card{
+		width: 80vw;
+		height: 100vw;
+	}
+	.cc-point{
+		font-size: clamp(.3em, .6em + 1vw, 1em);
+	}
+	.contact-card-text i{
+		font-size: clamp(.7em, 1em + 1vw, 1.5em);
+		margin: 0em 3vw -.3em 1vw;
+	}
+	.cc-sub-point{
+		font-size: clamp(.3em, .5em + 1vw, .9em);
+	}
 
-	/***** ABOUT US SECTION *****/
+
+
+
+	/***** ABOUT US PAGE *****/
 	.home-header{
 		font-size: 1.3em;
 	}
