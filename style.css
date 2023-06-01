@@ -660,8 +660,32 @@ header a{
 		left: 2.5vw;
 	}
 
-
-
+	/******* ABOUT/CONTACT SECTION *******/
+	.overview-section{
+		flex-direction: row;
+	}
+	.overview-col{
+		width: 50vw;
+		height: 40vw;
+		flex-direction: column;
+	}
+	.overview-btn{
+		flex:0 0 auto;
+		margin: 1vw 8em;
+		padding: 1.5em;
+		font-size: clamp(.3em, .8em + 1vw, 1.2em);
+	}
+	.overview-contact{
+		flex-direction: row;
+		width: 50vw;
+		height: 40vw;
+		margin: 0vw 0;
+	}
+	.contact-card{
+		width: 30vw;
+		height: 30vw;
+		margin: 5vw 0;
+	}
 
 
 
@@ -791,6 +815,33 @@ header a{
 		height: 33vw;
 		top: 0;
 		left: 2.5vw;
+	}
+
+	/******* ABOUT/CONTACT SECTION *******/
+	.overview-section{
+		flex-direction: row;
+	}
+	.overview-col{
+		width: 50vw;
+		height: 40vw;
+		flex-direction: column;
+	}
+	.overview-btn{
+		flex:0 0 auto;
+		margin: 1vw 8em;
+		padding: 1.5em;
+		font-size: clamp(.3em, .8em + 1vw, 1.2em);
+	}
+	.overview-contact{
+		flex-direction: row;
+		width: 50vw;
+		height: 40vw;
+		margin: 0vw 0;
+	}
+	.contact-card{
+		width: 30vw;
+		height: 30vw;
+		margin: 5vw 0;
 	}
 
 
