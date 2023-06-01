@@ -262,20 +262,26 @@ header a{
 
 /******* ABOUT/CONTACT SECTION *******/
 .overview-section{
-	margin-top: 1em;
+	margin: 1em 0;
 	display: flex;
 	flex-direction: column;
+}
+.overview-section-title h1{
+	text-align: center;
+	font-weight: 400;
+	font-size: clamp(.8em, 1.4em + 1vw, 2em);
+	padding: .8em 0 .5em 0;
 }
 .overview-col{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	width: 80vw;
-	margin: 0 auto;
+	margin: 0 auto 1em auto;
 }
 .overview-btn{
 	flex: 1 1 auto;
-	margin: 5vw .5em;
+	margin: 3vw 4vw;
 	padding: 1.5em;
 	font-size: clamp(.3em, .8em + 1vw, 1.2em);
 	font-weight: 300;
@@ -283,7 +289,7 @@ header a{
 	transition: 0.5s;
 	color: var(--bg-color);
 	box-shadow: 0 0 5px #ffffff;
-	border-radius: 40px;
+	border-radius: 50px;
 	background: linear-gradient(90deg, #002989, transparent) #c5cfe3;
 	text-decoration: none;
 	transition: background-color 1s;
@@ -294,24 +300,21 @@ header a{
 	background: linear-gradient(90deg, #c5cfe3, transparent) #002989;
 }
 .overview-contact{
-	width: 100vw;
-	height: 110vw;
-	margin: 8vw 0;
+	width: 85vw;
+	height: 90vw;
+	margin: 8vw 7.5vw;
     background-image: linear-gradient(290deg, #002989, #c5cfe3);
+	border-radius: 15px;
+	/* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+
 }
 .contact-card{
-	width: 80vw;
-	height: 90vw;
-	margin: 10vw 10vw;
+	width: 75vw;
+	height: 80vw;
+	margin: 5vw 0vw;
 	background-color: var(--bg-color);
 	border-radius: 15px;
 	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-}
-.overview-section-title h1{
-	text-align: center;
-	font-weight: 300;
-	font-size: clamp(.8em, 1.6em + 1vw, 2.2em);
-	padding: 1em 0 .5em 0;
 }
 .contact-card-text{
 	margin-top: .5em;
@@ -663,28 +666,44 @@ header a{
 	/******* ABOUT/CONTACT SECTION *******/
 	.overview-section{
 		flex-direction: row;
+		margin: 10em 0;
+	}
+	.overview-section-title h1{
+		font-size: 2.6vw;
 	}
 	.overview-col{
 		width: 50vw;
-		height: 40vw;
+		height: 35vw;
 		flex-direction: column;
 	}
 	.overview-btn{
 		flex:0 0 auto;
-		margin: 1vw 8em;
-		padding: 1.5em;
-		font-size: clamp(.3em, .8em + 1vw, 1.2em);
+		margin: .75vw 8em;
+		padding: 1.3em;
+		font-size: 1.5vw;
 	}
 	.overview-contact{
 		flex-direction: row;
-		width: 50vw;
-		height: 40vw;
-		margin: 0vw 0;
+		width: 40vw;
+		height: 38vw;
+		margin: 0vw 5vw;
 	}
 	.contact-card{
-		width: 30vw;
-		height: 30vw;
-		margin: 5vw 0;
+		width: clamp(30vw, 34vw, 38vw);
+		height: 32vw;
+		margin: 3vw 0;
+	}
+	.cc-point{
+		font-size: 1.6vw;
+		white-space: nowrap;
+	}
+	.contact-card-text i{
+		font-size: 2vw;
+		margin: 0em 1.5vw -.3em 1vw;
+	}
+	.cc-sub-point{
+		font-size: 1.3vw;
+		margin: 0 0 .7em 7vw;
 	}
 
 
