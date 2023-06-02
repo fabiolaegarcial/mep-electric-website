@@ -69,6 +69,11 @@ header a{
 	letter-spacing: 1.5px;
 	margin-left: .6em;
 }
+.header-link{
+	cursor: pointer;
+	position: relative;
+	z-index: 100;
+}
 #menu-icon{
 	font-size: 38px;
 	color: var(--text-color);
