@@ -503,7 +503,7 @@ header a{
 .contact-page-header{
 	background-color: #868d9c;
 	color: var(--bg-color);
-	padding: 15vh 5vh 7vh 3vh;
+	padding: 15vh 5vh 4vh 4vh;
 }
 .contact-page-header h1{
 	font-weight: 500;
@@ -512,10 +512,51 @@ header a{
 }
 .contact-page-header p{
 	font-weight: 200;
-	font-size: 1.9vh;
+	font-size: 2vh;
 }
-
-
+.cp-contact-information{
+	width: 100vw;;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 5vh;
+}
+.cp-contact-card{
+	border: .5px solid #00000047;
+	border-radius: 10px;
+	/* box-shadow: 0 1px 10px rgba(0, 0, 0, 0.113); */
+	margin: 10vw 10vw 0 10vw;
+	width: 80vw;
+	height: auto;
+	text-align: center;
+	padding: 3vh;
+}
+.cp-contact-card h1{
+	font-weight: 400;
+}
+.cp-contact-card p{
+	font-weight: 200;
+	padding: .5vh 0 2.5vh 0;
+}
+.cp-contact-card a{
+	font-weight: 600;
+	letter-spacing: .5px;
+	color: var(--secondary-color);
+}
+.buisness-hours-table{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 1vh;
+}
+.buisness-hours-table p{
+	padding: 0;
+}
+.buisness-days{
+	text-align: left;
+}
+.buisness-hours{
+	text-align: right;
+}
 
 
 
@@ -767,9 +808,47 @@ header a{
 
 
 
-	/***** CONTACT PAGE *****/
+	/*************** CONTACT PAGE ***************/
 	.contact{
-		margin-top: 4em;
+		margin: 5vh 0;
+	}
+	.contact-page-header{
+		padding: 16vh 5vw 5vh 10vw;
+	}
+	.contact-page-header h1{
+		font-size: 2.2vw;
+	}
+	.contact-page-header p{
+		font-size: 1.3vw;
+	}
+	.cp-contact-information{
+		width: 80vw;
+		margin: 1vw 10vw;
+		flex-direction: row;
+	}
+	.cp-contact-card{
+		align-self: center;
+		margin: 3vw 2vw;
+		padding: 2.5vw 3vw;
+		height: 21.5vw;
+	}
+	.cp-contact-card h1{
+		font-size: 1.7vw;
+	}
+	.cp-contact-card p{
+		padding: 1vw 0 6vw 0;
+		font-size: 1.2vw;
+	}
+	.cp-contact-card a{
+		margin: 0 -1vw;
+		font-size: 1.2vw;
+	}
+	.buisness-hours-table{
+		justify-content: space-between;
+		padding-top: 1vw;
+	}
+	.buisness-hours-table p{
+		padding: 0;
 	}
 
 
@@ -981,9 +1060,47 @@ header a{
 	}
 
 
-	/***** CONTACT PAGE *****/
+	/*************** CONTACT PAGE ***************/
 	.contact{
-		margin-top: 4em;
+		margin: 0;
+	}
+	.contact-page-header{
+		padding: 16vh 5vw 5vh 10vw;
+	}
+	.contact-page-header h1{
+		font-size: 2.2vh;
+	}
+	.contact-page-header p{
+		font-size: 1.4vh;
+	}
+	.cp-contact-information{
+		width: 85vw;
+		margin: 2vw 7.5vw 0 7.5vw;
+		flex-direction: row;
+	}
+	.cp-contact-card{
+		align-self: center;
+		margin: 3vw 1vw 0 1vw;
+		padding: 2.5vw 3vw;
+		height: 27vw;
+	}
+	.cp-contact-card h1{
+		font-size: 1.4vh;
+	}
+	.cp-contact-card p{
+		padding: 1vw 0 7.5vw 0;
+		font-size: 1.1vh;
+	}
+	.cp-contact-card a{
+		margin: 0 -1vw;
+		font-size: 1vh;
+	}
+	.buisness-hours-table{
+		justify-content: space-between;
+		padding-top: 1vw;
+	}
+	.buisness-hours-table p{
+		padding: 0;
 	}
 
 
