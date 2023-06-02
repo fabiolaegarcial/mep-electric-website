@@ -158,7 +158,6 @@ header a{
 	cursor: pointer;
 }
 
-
 /******* PARTNERS SECTION *******/
 .carousel-title h1{
 	margin: 5vw 0 2.5vw 0;
@@ -309,7 +308,7 @@ header a{
 	margin: 8vw 7.5vw;
     background-image: linear-gradient(290deg, #002989, #c5cfe3);
 	border-radius: 15px;
-	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 
 }
 .contact-card{
@@ -503,27 +502,26 @@ header a{
 .contact-page-header{
 	background-color: #868d9c;
 	color: var(--bg-color);
-	padding: 15vh 5vh 4vh 4vh;
+	padding: 30vw 5vh 4vh 4vh;
 }
 .contact-page-header h1{
 	font-weight: 500;
-	font-size: 3.5vh;
+	font-size: 7.5vw;
 	margin-bottom: 1vh;
 }
 .contact-page-header p{
 	font-weight: 200;
-	font-size: 2vh;
+	font-size: 4vw;
 }
 .cp-contact-information{
 	width: 100vw;;
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 5vh;
+	margin-bottom: 8vh;
 }
 .cp-contact-card{
 	border: .5px solid #00000047;
 	border-radius: 10px;
-	/* box-shadow: 0 1px 10px rgba(0, 0, 0, 0.113); */
 	margin: 10vw 10vw 0 10vw;
 	width: 80vw;
 	height: auto;
@@ -531,9 +529,11 @@ header a{
 	padding: 3vh;
 }
 .cp-contact-card h1{
+	font-size: 6vw;
 	font-weight: 400;
 }
 .cp-contact-card p{
+	font-size: 4.2vw;
 	font-weight: 200;
 	padding: .5vh 0 2.5vh 0;
 }
@@ -627,7 +627,221 @@ header a{
 
 
 
+@media screen and (max-width: 850px) and (orientation: landscape){
+	/***** NAVBAR *****/
+	header{
+		padding: 10px 5%;
+	}
+	.logo{
+		height: clamp(1.5em, 2.3em + 1vw , 2.8em);
+	}
+	.navbar a{
+		padding: clamp(.3em, .4em, .5em);
+		font-size: 4vh;
+	}
+	/*** WELCOME SECTION ***/
+	.welcome-section{
+		height: clamp(30em, 32em + 2vw, 40em); 
+	}
+	.hero-welcome{
+		height: clamp(30em, 32em + 2vw, 40em); 
+	}
+	.welcome-text{
+		bottom: clamp(10em, 25em + 2vw, 30em);
+	}
+	#intro-text{
+		font-size: clamp(1em, 1.3em + 2vw , 2.5em);
+	}
+	#contact-redirect{
+		font-size: clamp(.4rem, .7rem + 2vw , .8rem);
+	}
 
+	/*** PARTNERS SECTION ***/
+	.partners-section img{
+		scale: 60%;
+	}
+	.owl-dots{
+		margin-top: 0;
+	}
+
+	/*** SP-SERVICES SECTION ***/
+	.home-services-title h1{
+		font-size: 4vw;
+		padding: .5em 5vw 0 5vw;
+	}
+	.home-services-subtitle p{
+		font-size: 2.4vw;
+		margin: 0 0 1em 0;
+	} 
+	.home-services{
+		background-image: url("./MEP_imgs/website-photos/background-splash.png");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		padding: 2em 0 5em 0;
+	}
+	.services-section{
+		flex-direction: row;
+		width: 90vw;
+		margin: 0 5vw;
+	}
+	.services-text{
+		font-size: 2.7vw;
+	}
+	.services-image{
+		width: 25vw;
+		height: 33vw;
+		margin: 0 2.5vw;
+	}
+	.overlay-s{
+		width: 25vw;
+		height: 33vw;
+		top: 0;
+		left: 2.5vw;
+	}
+	/*** ABOUT/CONTACT SECTION ***/
+	.overview-section{
+		width: 85vw;
+		flex-direction: row;
+		margin: 5vw 7.5vw 10vw 10vw;
+		height: auto;
+	}
+	.overview-section-container{
+		height: 45vw;
+		padding: 1vw;
+	}
+	.overview-section-title h1{
+		font-size: 3vw;
+		margin-top: 0vw;
+	}
+	.overview-col{
+		width: 40vw;
+		height: 36vw;
+		flex-direction: column;
+		margin: 0;
+	}
+	.overview-btn{
+		flex: 0 0 auto;
+		margin: .75vw 5vw;
+		padding: 1.1em;
+		font-size: 1.7vw;
+	}
+	.overview-contact{
+		flex-direction: row;
+		width: 35vw;
+		height: 38vw;
+		margin: 2vw 1vw;
+	}
+	.contact-card{
+		width: 30vw;
+		height: 33vw;
+		margin: 2.5vw 0;
+	}
+	.cc-point{
+		font-size: 1.6vw;
+	}
+	.contact-card-text i{
+		font-size: 2.2vw;
+		margin: 0em 1.5vw -.3em 1vw;
+	}
+	.cc-sub-point{
+		font-size: 1.4vw;
+		margin: 0 0 .7em 7vw;
+	}
+
+
+	/***** PROJECTS PAGE *****/
+	.projects{
+		margin: 0;
+	}
+	.projects-container{
+		grid-template-columns: repeat(2, minmax(38vw, 39vw));
+		padding: 2em 10vw 4em 10vw;
+	}
+	.box img{
+		height: 38vw;
+	}
+
+
+	/***** ABOUT US PAGE *****/
+	.about-us{
+		margin-top: 0em;
+	}
+	.home-header{
+		padding-top: 4vh;
+		font-size: 4.5vw;
+	}
+	
+	/***** CONTACT PAGE *****/
+	.contact{
+		margin-top: 0;
+	}
+	.contact-page-header{
+		padding: 25vh 10vh 4vh 10vh;
+	}
+	.contact-page-header h1{
+		font-weight: 400;
+		font-size: 8vh;
+		margin-top: 3vh;
+	}
+	.contact-page-header p{
+		font-size: 4vh;
+	}
+	.cp-contact-information{
+		margin-bottom: 15vh;
+	}
+	.cp-contact-card{
+		border: .5px solid #00000047;
+		border-radius: 10px;
+		margin: 5vw 20vw 0 20vw;
+		width: 60vw;
+		padding: 4vw;
+	}
+	.cp-contact-card h1{
+		font-size: 7vh;
+		font-weight: 400;
+	}
+	.cp-contact-card p{
+		font-size: 4.5vh;
+		padding: 1vh 2vw 2.5vh 2vw;
+	}
+
+
+	/***** SERVICES PAGE *****/
+	.services{
+		margin-top: 1em;
+	}
+	.services-box ul li{
+		font-size: 3vw;
+		font-weight: 300;
+	}
+	.services-box ul li:hover{
+		font-weight: 400;
+	}
+	.services-dropdown{
+		font-size: 2.4vw;
+	}
+
+	/***** FOOTER *****/
+	.row{
+		display: grid;
+	}
+	#row-one{
+		grid-row: 1;
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+	#row-two{
+		grid-row: 2;
+		grid-column: 2;
+	   }
+	#row-three{
+		grid-row: 2;
+		grid-column: 3;
+		margin-top: .5rem;
+	}
+
+}
 
 
 
@@ -635,7 +849,7 @@ header a{
 
 
 /********************** MEDIA QUERIES **********************/
-@media screen and (min-width: 750px) and (orientation: landscape){
+@media screen and (min-width: 850px) and (orientation: landscape){
 	/***** NAVBAR *****/
 	header{
 		padding: 10px 2%;
@@ -886,8 +1100,6 @@ header a{
 	}
 }
 
-
-
 @media screen and (min-width: 750px) and (orientation: portrait){
 	/***** NAVBAR *****/
 	header{
@@ -918,6 +1130,10 @@ header a{
 	}
 	.welcome-section{
 		margin-bottom: 7vw;
+	}
+	/******* PARTNERS SECTION *******/
+	.carousel-title{
+		margin-bottom: 2vw;
 	}
 	/***** SP-SERVICES SECTION *****/
 	.home-services-title h1{
@@ -954,12 +1170,6 @@ header a{
 		top: 0;
 		left: 2.5vw;
 	}
-
-	/******* SP-SERVICES SECTION *******/
-	.carousel-title{
-		margin-bottom: 2vw;
-	}
-
 	/******* ABOUT/CONTACT SECTION *******/
 	.overview-section{
 		width: 85vw;
@@ -1025,16 +1235,6 @@ header a{
 		line-height: 1.75;
 	}
 
-	/***** PARTNERS SECTION *****/
-	.home-ext-logos{
-		grid-template-columns: repeat(auto-fit, minmax(12vw, auto));
-		padding: 3em 10vw 15em 10vw;
-		row-gap: clamp(.5em, 1.5em + 1vw, 2.5em);
-		column-gap: clamp(.5em, 1em + 1vw, 2em);
-	}
-	.home-ext-logos img{
-		width: clamp(10vw, 12vw, 14vw);
-	}
 
 
 
