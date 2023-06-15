@@ -121,10 +121,11 @@ header a{
 }
 .hero-welcome{
 	height: clamp(30em, 52em + 2vw, 70em); 
-	width: 100vw;
+	margin-left: -1vw;
+	width: 102vw;
 	object-fit: cover;
-	opacity: .75;
-	-webkit-filter: blur(1px);
+	opacity: .8;
+	-webkit-filter: blur(2.5px);
 }
 .welcome-text{
 	position: relative;
